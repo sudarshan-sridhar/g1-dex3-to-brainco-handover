@@ -1,0 +1,59 @@
+%%{init: {"flowchart": {"nodeSpacing": 30, "rankSpacing": 45, "curve": "basis"}, "themeVariables": {"fontSize": "15px"}}}%%
+flowchart TB
+    subgraph SIM["Isaac Lab 2.3.2 / Isaac Sim 5.1 (laptop)"]
+        direction LR
+        CTRL["Joint position controllers<br/>implicit PD: arms k=3000 d=10<br/>Dex3 k=20 d=2 / BrainCo k=10 d=0.5<br/>software mimic q_distal = r * q_prox"]
+        PHYS["PhysX 120 Hz<br/>decimation 6 -> control 20 Hz"]
+        ROBOT["G1 29-DoF articulation, fix_root_link<br/>A: Dex3 hands (7/hand, 28-D)<br/>B/C: BrainCo Revo2 (6 actuated/hand, 26-D)"]
+        OBJ["Object: upright stick 3.0/3.5 cm x 22/24 cm<br/>square or round, 2 cm start jitter<br/>place-target marker"]
+        CAMS["Cameras ego_view + front<br/>224x224 RGB"]
+        CTRL --> PHYS --> ROBOT
+        ROBOT --- OBJ
+        ROBOT --- CAMS
+    end
+
+    OBS["Observations: state 28-D (Dex3) or 26-D (BrainCo)<br/>2 x RGB 224x224, language task string"]
+    TUN["SSH tunnel (ControlMaster), TCP policy bridge<br/>length-prefixed pickle, laptop:56xx <-> GL node:56xx"]
+
+    subgraph GL["Great Lakes GPU: GR00T N1.7-3B policy server"]
+        direction LR
+        VLM["Eagle VLM backbone<br/>FROZEN"]
+        PROJ["Embodiment state/action projectors<br/>NEW_EMBODIMENT slot, trained"]
+        HEAD["Flow-matching DiT action head<br/>horizon 16, trained"]
+        VLM --> HEAD
+        PROJ --> HEAD
+    end
+
+    ACT["Action chunk 16 x (28-D or 26-D) absolute joint targets"]
+    RT["RETARGETING LAYER  scripts/retarget_dex3_to_brainco.py<br/>Dex3 28-D -> BrainCo 26-D: arm 14 pass-through, hand 7 -> 6 per side<br/>thumb 3->2, index 2->1, middle 2->middle+ring+pinky<br/>normalised closure, per-joint limit rescale<br/>Stage B only; identity in Stages A and C"]
+
+    ROBOT --> OBS
+    CAMS --> OBS
+    OBS --> TUN --> VLM
+    TUN --> PROJ
+    HEAD --> ACT --> TUN
+    TUN --> RT --> CTRL
+
+    subgraph DATA["Demo generation + fine-tune"]
+        direction LR
+        GEN["Scripted demo generator<br/>handover_demos.py, diff-IK, phase-sequenced<br/>Dex3 ~680 steps (A)"]
+        RESIM["Stage C only: BrainCo-native grasp demos<br/>thumb swung across palm, ~940 steps<br/>(retargeted demos cannot grasp)"]
+        LRB["LeRobot dataset<br/>merge (drop black-camera eps)<br/>convert_handover_to_lerobot.py<br/>fps 20, action-shift 1, both cameras"]
+        FT["Finetune, slurm 1x A40<br/>launch_finetune.py NEW_EMBODIMENT<br/>backbone frozen; projector + DiT head train<br/>bs 16, lr 1e-4; A 16k steps from N1.7, C 10k from A"]
+        CKPT["Checkpoint<br/>groot_dex3_handover_s1 (A)<br/>groot_brainco_s1 (C)"]
+        GEN --> LRB
+        RESIM --> LRB
+        LRB --> FT --> CKPT
+    end
+    SIM -. records .-> GEN
+    CKPT -. loaded by .-> GL
+
+    subgraph EVAL["Evaluation loop"]
+        direction LR
+        CFG["5 configs x 10 trials per stage<br/>sticks 3.0x24, 3.0x22, 3.5x24<br/>held-out: round stick, start pose<br/>stages A / B / C"]
+        MET["Metrics M1-M6<br/>M1 success (grasp/transfer/place)<br/>M2 joint tracking error<br/>M3 falls, drops, contacts<br/>M4 completion time, Hz<br/>M5 adaptation cost<br/>M6 failure categories"]
+        OUT["Labeled videos (Stage A/B/C)<br/>results table + plots"]
+        CFG --> MET --> OUT
+    end
+    CFG -. drives .-> SIM
+    SIM -. logs .-> MET

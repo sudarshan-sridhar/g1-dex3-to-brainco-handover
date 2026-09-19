@@ -1,0 +1,18 @@
+# robot assets and datasets are reproduced from source, see assets_brainco/README.md
+assets_brainco/unitree_ros/
+assets_brainco/usd/
+data/
+logs/
+
+# evaluation outputs: the per-trial records, the table and the plots are committed,
+# the raw videos and trajectory arrays are attached to the release instead
+results/stageA/
+results/stageB/
+results/stageC/
+results/stageC_cap750/
+results/videos/
+
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

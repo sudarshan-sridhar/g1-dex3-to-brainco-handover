@@ -1,0 +1,151 @@
+stage,stage_name,configuration,trial,success,grasp_step,handover_step,place_step,completion_s,failure_mode,dropped,object_impacts,joint_limit_violations,final_tilt_deg,final_hand_clearance_m,control_hz
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 24 cm,0,0,122,396,554,27.7,moved after placing,0,6,0,89.99997883597521,0.25119841978380303,4.498134718306292
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 24 cm,1,0,,,,,no grasp,0,1,0,89.99997330403895,0.1343832277518366,4.296551046764392
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 24 cm,2,0,117,,,,handover not completed,0,7,0,89.99996890408111,0.26978306549154824,4.636354705058478
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 24 cm,3,0,138,,,,handover not completed,0,6,0,89.99995699725203,0.22637792083605818,4.4107313778969806
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 24 cm,4,0,,,,,no grasp,0,1,0,89.99996547486546,0.18608898809857627,4.647612470164753
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 24 cm,5,0,121,414,544,27.2,dropped after handover,1,5,0,89.99998854826055,0.23757906266410544,4.608625381480968
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 24 cm,6,0,,,,,no grasp,0,2,0,89.99998440255527,0.3188354925609326,4.782532782301566
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 24 cm,7,0,,,,,no grasp,0,3,0,89.99997224663679,0.16833940820391569,4.780024209993989
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 24 cm,8,0,,,,,no grasp,0,1,0,89.99996219587514,0.15362576943094336,4.749483454411824
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 24 cm,9,0,135,424,572,28.6,dropped after handover,1,4,0,0.01434163571912986,0.202787706666141,4.583782520559801
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 22 cm,0,0,126,409,496,24.8,dropped after handover,1,5,0,7.0306674548207235,0.026696441246365277,4.762331692222587
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 22 cm,1,0,123,437,580,29.0,moved after placing,0,14,0,89.99993848904597,0.2571476225409155,4.809818047747595
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 22 cm,2,0,150,,,,dropped before handover,1,9,0,89.99996266562384,1.076504972140334,4.968140342731269
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 22 cm,3,1,164,454,556,27.8,success,0,26,0,89.99997274140283,0.19088881303581073,4.9747630631460895
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 22 cm,4,1,139,394,488,24.4,success,0,11,0,0.010078929353287911,0.09606589079473427,4.837861146993214
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 22 cm,5,1,164,427,569,28.45,success,0,3,0,0.006178025747691578,0.17711177657355065,4.88858346277625
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 22 cm,6,0,140,,,,dropped before handover,1,6,0,89.99993011338981,0.18115227295458436,5.001276749267937
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 22 cm,7,1,167,438,525,26.25,success,0,9,0,11.82085484832248,0.03633002245895854,4.84116212123052
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 22 cm,8,0,121,415,540,27.0,moved after placing,0,14,0,89.99996065072253,0.16458273325814998,4.828884435922165
+A,Original Dex-hand task (Dex3),Square stick 3.0 x 22 cm,9,1,98,359,454,22.7,success,0,6,0,0.02774554648542714,0.03731029524962871,4.767360344307228
+A,Original Dex-hand task (Dex3),Square stick 3.5 x 24 cm,0,0,,,,,no grasp,0,3,0,89.99996322720376,0.20790668366075238,5.147070279292933
+A,Original Dex-hand task (Dex3),Square stick 3.5 x 24 cm,1,0,,,,,no grasp,0,1,0,89.9999621541581,0.1741856699831444,5.072041872732883
+A,Original Dex-hand task (Dex3),Square stick 3.5 x 24 cm,2,0,,,,,no grasp,0,1,0,89.99998809952636,0.14946030849044978,5.109631890543664
+A,Original Dex-hand task (Dex3),Square stick 3.5 x 24 cm,3,0,120,,,,dropped before handover,1,5,0,89.99998208017881,0.1693752473509928,5.01971007566829
+A,Original Dex-hand task (Dex3),Square stick 3.5 x 24 cm,4,0,,,,,no grasp,0,1,0,89.9999757358511,0.2175515556047108,4.672934853420094
+A,Original Dex-hand task (Dex3),Square stick 3.5 x 24 cm,5,0,,,,,no grasp,0,1,0,89.9999677799767,0.2412741331410092,5.225326647152238
+A,Original Dex-hand task (Dex3),Square stick 3.5 x 24 cm,6,0,,,,,no grasp,0,1,0,89.99999714988063,0.21036661660028588,4.64881485810356
+A,Original Dex-hand task (Dex3),Square stick 3.5 x 24 cm,7,0,171,,,,dropped before handover,1,8,0,89.9999405891552,0.17018430967781056,4.97542321374418
+A,Original Dex-hand task (Dex3),Square stick 3.5 x 24 cm,8,1,139,415,593,29.65,success,0,14,0,0.00746557818303661,0.14304008943340074,4.915965588711685
+A,Original Dex-hand task (Dex3),Square stick 3.5 x 24 cm,9,0,53,,,,dropped before handover,1,15,0,89.99996440804055,0.1493818748547185,4.929665922436568
+A,Original Dex-hand task (Dex3),Held-out object: round stick 3.0 x 24 cm,0,0,184,,,,dropped before handover,1,2,0,89.99971953639742,0.16690584302014005,3.8892666481726663
+A,Original Dex-hand task (Dex3),Held-out object: round stick 3.0 x 24 cm,1,0,86,376,461,23.05,not released cleanly,0,6,0,23.01136656665899,0.03620134456494695,3.5008269537850305
+A,Original Dex-hand task (Dex3),Held-out object: round stick 3.0 x 24 cm,2,0,265,557,640,32.0,moved after placing,0,4,0,19.963487460594123,0.015536540666354407,4.792333070944276
+A,Original Dex-hand task (Dex3),Held-out object: round stick 3.0 x 24 cm,3,0,147,433,518,25.9,dropped after handover,1,9,0,29.816379472231613,0.010106785581269168,3.539848406168604
+A,Original Dex-hand task (Dex3),Held-out object: round stick 3.0 x 24 cm,4,0,,,,,no grasp,0,1,0,89.99999876432733,0.25243779782505305,4.858260090209678
+A,Original Dex-hand task (Dex3),Held-out object: round stick 3.0 x 24 cm,5,0,115,401,548,27.4,moved after placing,0,12,0,89.99930869211052,0.17913608948176224,4.710352692145073
+A,Original Dex-hand task (Dex3),Held-out object: round stick 3.0 x 24 cm,6,0,201,497,579,28.95,not released cleanly,0,8,0,16.00156578437844,0.01604857756487385,4.7493795468258515
+A,Original Dex-hand task (Dex3),Held-out object: round stick 3.0 x 24 cm,7,0,,,,,no grasp,0,1,0,89.99994586008364,0.19309319551126386,5.078510460531009
+A,Original Dex-hand task (Dex3),Held-out object: round stick 3.0 x 24 cm,8,0,117,404,488,24.4,not released cleanly,0,13,0,11.535546389610902,0.017845943758805216,4.7872431754156155
+A,Original Dex-hand task (Dex3),Held-out object: round stick 3.0 x 24 cm,9,1,43,356,556,27.8,success,0,8,0,89.99999999488304,0.21080782859591285,4.864481746837952
+A,Original Dex-hand task (Dex3),Held-out initial pose,0,0,,,,,no grasp,0,1,0,89.99997199977898,0.1291983159324902,5.160449742360235
+A,Original Dex-hand task (Dex3),Held-out initial pose,1,0,,,,,no grasp,0,1,0,89.99999206468256,0.07993362447775262,2.8466061677280607
+A,Original Dex-hand task (Dex3),Held-out initial pose,2,0,,,,,no grasp,0,1,0,89.99998561328977,0.1778480480920835,4.9649638291163525
+A,Original Dex-hand task (Dex3),Held-out initial pose,3,1,104,396,566,28.3,success,0,4,0,0.010871346669792732,0.19804812526044813,3.6948169216894753
+A,Original Dex-hand task (Dex3),Held-out initial pose,4,0,,,,,no grasp,0,3,0,89.99997297713601,0.18996834084027375,3.8595124182453113
+A,Original Dex-hand task (Dex3),Held-out initial pose,5,0,,,,,no grasp,0,2,0,89.99999135427927,0.19458892110285142,5.0006550624766835
+A,Original Dex-hand task (Dex3),Held-out initial pose,6,0,,,,,no grasp,0,2,0,89.99993618012853,0.20739934565600648,4.973435353275653
+A,Original Dex-hand task (Dex3),Held-out initial pose,7,0,,,,,no grasp,0,2,0,89.99993937864973,0.18644617089287152,5.115909741376858
+A,Original Dex-hand task (Dex3),Held-out initial pose,8,0,,,,,no grasp,0,2,0,89.99997163770585,0.2621428203819227,4.949716715536176
+A,Original Dex-hand task (Dex3),Held-out initial pose,9,0,,,,,no grasp,0,1,0,89.99999246670156,0.16347095920623933,3.400555331270155
+B,Brainco retargeting only,Square stick 3.0 x 24 cm,0,0,,,,,no grasp,0,1,0,,,4.639613608425602
+B,Brainco retargeting only,Square stick 3.0 x 24 cm,1,0,,,,,no grasp,0,1,0,,,4.500737557467068
+B,Brainco retargeting only,Square stick 3.0 x 24 cm,2,0,,,,,no grasp,0,1,0,,,3.612298931729332
+B,Brainco retargeting only,Square stick 3.0 x 24 cm,3,0,,,,,no grasp,0,1,0,,,4.455480430525223
+B,Brainco retargeting only,Square stick 3.0 x 24 cm,4,0,,,,,no grasp,0,1,0,,,3.0724150140727264
+B,Brainco retargeting only,Square stick 3.0 x 24 cm,5,0,,,,,no grasp,0,1,0,,,4.6042430414027065
+B,Brainco retargeting only,Square stick 3.0 x 24 cm,6,0,,,,,no grasp,0,1,0,,,4.629842288002707
+B,Brainco retargeting only,Square stick 3.0 x 24 cm,7,0,,,,,no grasp,0,1,0,,,3.6079986217906646
+B,Brainco retargeting only,Square stick 3.0 x 24 cm,8,0,,,,,no grasp,0,1,0,,,4.578153744987527
+B,Brainco retargeting only,Square stick 3.0 x 24 cm,9,0,,,,,no grasp,0,1,0,,,4.506651792808853
+B,Brainco retargeting only,Square stick 3.0 x 22 cm,0,0,,,,,no grasp,0,1,0,,,4.455044017171357
+B,Brainco retargeting only,Square stick 3.0 x 22 cm,1,0,,,,,no grasp,0,1,0,,,4.598259872178625
+B,Brainco retargeting only,Square stick 3.0 x 22 cm,2,0,,,,,no grasp,0,1,0,,,4.23151518700448
+B,Brainco retargeting only,Square stick 3.0 x 22 cm,3,0,,,,,no grasp,0,2,0,,,4.545018755283343
+B,Brainco retargeting only,Square stick 3.0 x 22 cm,4,0,,,,,no grasp,0,1,0,,,4.5477082684001795
+B,Brainco retargeting only,Square stick 3.0 x 22 cm,5,0,,,,,no grasp,0,1,0,,,4.524611765053832
+B,Brainco retargeting only,Square stick 3.0 x 22 cm,6,0,,,,,no grasp,0,1,0,,,4.595836427357626
+B,Brainco retargeting only,Square stick 3.0 x 22 cm,7,0,,,,,no grasp,0,1,0,,,4.603014222858823
+B,Brainco retargeting only,Square stick 3.0 x 22 cm,8,0,,,,,no grasp,0,1,0,,,4.616147842166989
+B,Brainco retargeting only,Square stick 3.0 x 22 cm,9,0,,,,,no grasp,0,4,0,,,4.608260539518964
+B,Brainco retargeting only,Square stick 3.5 x 24 cm,0,0,,,,,no grasp,0,3,0,,,4.461254589209371
+B,Brainco retargeting only,Square stick 3.5 x 24 cm,1,0,,,,,no grasp,0,1,0,,,4.396139736567639
+B,Brainco retargeting only,Square stick 3.5 x 24 cm,2,0,,,,,no grasp,0,2,0,,,4.411496406455877
+B,Brainco retargeting only,Square stick 3.5 x 24 cm,3,0,,,,,no grasp,0,1,0,,,4.466344776325322
+B,Brainco retargeting only,Square stick 3.5 x 24 cm,4,0,,,,,no grasp,0,1,0,,,2.9877083277278835
+B,Brainco retargeting only,Square stick 3.5 x 24 cm,5,0,,,,,no grasp,0,1,0,,,4.347181597753875
+B,Brainco retargeting only,Square stick 3.5 x 24 cm,6,0,,,,,no grasp,0,1,0,,,4.00541843606637
+B,Brainco retargeting only,Square stick 3.5 x 24 cm,7,0,,,,,no grasp,0,2,0,,,4.287671468083977
+B,Brainco retargeting only,Square stick 3.5 x 24 cm,8,0,,,,,no grasp,0,0,0,,,4.330492376169078
+B,Brainco retargeting only,Square stick 3.5 x 24 cm,9,0,,,,,no grasp,0,1,0,,,4.397391848731809
+B,Brainco retargeting only,Held-out object: round stick 3.0 x 24 cm,0,0,,,,,no grasp,0,1,0,,,4.635643504316237
+B,Brainco retargeting only,Held-out object: round stick 3.0 x 24 cm,1,0,,,,,no grasp,0,3,0,,,4.660131840834018
+B,Brainco retargeting only,Held-out object: round stick 3.0 x 24 cm,2,0,,,,,no grasp,0,4,0,,,4.534451638095485
+B,Brainco retargeting only,Held-out object: round stick 3.0 x 24 cm,3,0,,,,,no grasp,0,6,0,,,4.57568247448021
+B,Brainco retargeting only,Held-out object: round stick 3.0 x 24 cm,4,0,,,,,no grasp,0,1,0,,,4.575950683132001
+B,Brainco retargeting only,Held-out object: round stick 3.0 x 24 cm,5,0,,,,,no grasp,0,2,0,,,4.585966613196961
+B,Brainco retargeting only,Held-out object: round stick 3.0 x 24 cm,6,0,,,,,no grasp,0,1,0,,,3.1133080197286707
+B,Brainco retargeting only,Held-out object: round stick 3.0 x 24 cm,7,0,,,,,no grasp,0,1,0,,,4.5647775587121355
+B,Brainco retargeting only,Held-out object: round stick 3.0 x 24 cm,8,0,,,,,no grasp,0,1,0,,,4.613547812947466
+B,Brainco retargeting only,Held-out object: round stick 3.0 x 24 cm,9,0,,,,,no grasp,0,1,0,,,3.686933733863975
+B,Brainco retargeting only,Held-out initial pose,0,0,,,,,no grasp,0,0,0,,,4.356619156210575
+B,Brainco retargeting only,Held-out initial pose,1,0,,,,,no grasp,0,0,0,,,4.61037666253594
+B,Brainco retargeting only,Held-out initial pose,2,0,,,,,no grasp,0,0,0,,,3.7037189868026883
+B,Brainco retargeting only,Held-out initial pose,3,0,,,,,no grasp,0,0,0,,,4.343207313839272
+B,Brainco retargeting only,Held-out initial pose,4,0,,,,,no grasp,0,0,0,,,4.499088849924837
+B,Brainco retargeting only,Held-out initial pose,5,0,,,,,no grasp,0,1,0,,,4.53977064530299
+B,Brainco retargeting only,Held-out initial pose,6,0,,,,,no grasp,0,0,0,,,4.5729440809836115
+B,Brainco retargeting only,Held-out initial pose,7,0,,,,,no grasp,0,0,0,,,4.549705233030145
+B,Brainco retargeting only,Held-out initial pose,8,0,,,,,no grasp,0,2,0,,,4.605356849031945
+B,Brainco retargeting only,Held-out initial pose,9,0,,,,,no grasp,0,2,0,,,4.619634329296591
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 24 cm,0,0,,,,,no grasp,0,4,0,89.99992843956296,0.08756389939916942,4.51269779424104
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 24 cm,1,0,,,,,no grasp,0,1,0,89.99997491949442,0.04358080521157451,4.3557087113080355
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 24 cm,2,1,134,420,645,32.25,success,0,4,0,0.005239809126926064,0.04688717755504709,4.052827275490839
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 24 cm,3,0,148,,,,dropped before handover,1,3,0,89.99994264642858,0.2297165208203925,4.377710074318809
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 24 cm,4,0,152,542,771,38.55,dropped after handover,1,2,0,89.99993901463006,0.14978476219435588,4.063639274799534
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 24 cm,5,1,126,557,819,40.95,success,0,4,0,0.014412413445768189,0.08336630752777713,2.9622713205006583
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 24 cm,6,0,,,,,no grasp,0,1,0,89.99999468253912,0.1592676605011703,4.228960236022447
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 24 cm,7,0,,,,,no grasp,0,1,0,89.99999763290566,0.06825861408023795,4.2460432540285025
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 24 cm,8,0,,,,,no grasp,0,1,0,89.99998156678554,0.09163680480721656,4.24880001576156
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 24 cm,9,0,136,,,,dropped before handover,1,2,0,89.99994961845928,0.1538315859818195,4.219688161950508
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 22 cm,0,0,141,489,701,35.05,dropped after handover,1,1,0,89.99994719268777,0.1471634824992185,4.371165611308849
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 22 cm,1,1,139,539,996,49.8,success,0,18,0,0.011243634280466758,0.04709126731475352,4.177776546602371
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 22 cm,2,0,,,,,no grasp,0,1,0,89.99996424430954,0.09237866227856191,3.8229896015637386
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 22 cm,3,0,,,,,no grasp,0,1,0,89.9999999055372,0.08760460361035784,3.6913595162349497
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 22 cm,4,0,,,,,no grasp,0,1,0,89.99995562230875,0.1430198309691073,4.075898552225021
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 22 cm,5,0,,,,,no grasp,0,1,0,89.9999680671924,0.13459717766023344,4.367883756426376
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 22 cm,6,1,145,567,834,41.7,success,0,6,0,89.99994607786418,0.16680200993866828,3.9829002273305014
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 22 cm,7,1,155,546,753,37.65,success,0,3,0,0.010352616265894994,0.12755428838971244,3.4693080229693876
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 22 cm,8,0,,,,,no grasp,0,1,0,89.99996025093064,0.05748156517493458,3.5569229243521474
+C,Brainco retargeting + fine-tuning,Square stick 3.0 x 22 cm,9,1,138,481,723,36.15,success,0,10,0,89.9999441954928,0.18120314056317693,4.182029472980292
+C,Brainco retargeting + fine-tuning,Square stick 3.5 x 24 cm,0,0,,,,,no grasp,0,3,0,89.99998951932834,0.0968302483707754,3.95728405977883
+C,Brainco retargeting + fine-tuning,Square stick 3.5 x 24 cm,1,0,,,,,no grasp,0,1,0,89.99999014256406,0.07841127392669424,4.361281052557863
+C,Brainco retargeting + fine-tuning,Square stick 3.5 x 24 cm,2,0,156,501,767,38.35,moved after placing,0,4,0,89.99996650692587,0.16624946917483724,3.4656412443842286
+C,Brainco retargeting + fine-tuning,Square stick 3.5 x 24 cm,3,1,150,521,787,39.35,success,0,5,0,0.006831676712653661,0.04242589989342421,4.434282145587408
+C,Brainco retargeting + fine-tuning,Square stick 3.5 x 24 cm,4,0,,,,,no grasp,0,1,0,89.99998000661928,0.09422533546242737,4.016842077129455
+C,Brainco retargeting + fine-tuning,Square stick 3.5 x 24 cm,5,0,,,,,no grasp,0,1,0,89.99998890784559,0.04102498951313849,4.675261407501285
+C,Brainco retargeting + fine-tuning,Square stick 3.5 x 24 cm,6,0,143,,,,dropped before handover,1,2,0,89.99997643423258,0.1389931612613542,4.657680795625106
+C,Brainco retargeting + fine-tuning,Square stick 3.5 x 24 cm,7,0,,,,,no grasp,0,2,0,89.9999770991597,0.15402953099612915,4.662475184364331
+C,Brainco retargeting + fine-tuning,Square stick 3.5 x 24 cm,8,0,,,,,no grasp,0,1,0,89.99998656613603,0.07825883914803095,3.773592409447094
+C,Brainco retargeting + fine-tuning,Square stick 3.5 x 24 cm,9,1,137,519,817,40.85,success,0,0,0,0.008902344162970482,0.12016372977354005,4.338650139871635
+C,Brainco retargeting + fine-tuning,Held-out object: round stick 3.0 x 24 cm,0,0,146,,,,dropped before handover,1,6,0,89.99998682400023,4.456092580700607,4.667618699070718
+C,Brainco retargeting + fine-tuning,Held-out object: round stick 3.0 x 24 cm,1,0,,,,,no grasp,0,1,0,89.99997568133844,0.08346665490038452,3.486899595017665
+C,Brainco retargeting + fine-tuning,Held-out object: round stick 3.0 x 24 cm,2,1,134,523,809,40.45,success,0,7,0,4.4366608547947735,0.06301651304337216,4.469722690018612
+C,Brainco retargeting + fine-tuning,Held-out object: round stick 3.0 x 24 cm,3,0,147,559,680,34.0,not released cleanly,0,6,0,42.03320710404756,0.008345440789480664,4.462899665804482
+C,Brainco retargeting + fine-tuning,Held-out object: round stick 3.0 x 24 cm,4,0,147,511,762,38.1,moved after placing,0,8,0,89.99982981818482,0.18143380392200176,4.543851079241082
+C,Brainco retargeting + fine-tuning,Held-out object: round stick 3.0 x 24 cm,5,0,,,,,no grasp,0,7,0,89.99998926962955,1.0843381616858114,4.6988280100834325
+C,Brainco retargeting + fine-tuning,Held-out object: round stick 3.0 x 24 cm,6,0,,,,,no grasp,0,4,0,89.99999657610833,3.517534528186049,3.428539334084677
+C,Brainco retargeting + fine-tuning,Held-out object: round stick 3.0 x 24 cm,7,0,,,,,no grasp,0,1,0,89.9999979376578,0.16397668031575374,3.10143245660026
+C,Brainco retargeting + fine-tuning,Held-out object: round stick 3.0 x 24 cm,8,0,148,505,646,32.3,not released cleanly,0,13,0,59.46024076362418,0.1553451168949057,4.441961612751021
+C,Brainco retargeting + fine-tuning,Held-out object: round stick 3.0 x 24 cm,9,0,140,529,738,36.9,dropped after handover,1,16,0,89.99987421653135,0.070881350594016,4.4890908132624805
+C,Brainco retargeting + fine-tuning,Held-out initial pose,0,0,,,,,no grasp,0,0,0,89.99997479302014,0.042480897277796546,4.731064493020689
+C,Brainco retargeting + fine-tuning,Held-out initial pose,1,0,,,,,no grasp,0,0,0,89.99998057709792,0.03901347117482695,4.753923142701483
+C,Brainco retargeting + fine-tuning,Held-out initial pose,2,0,,,,,no grasp,0,0,0,89.99998956913353,0.03971951052843336,4.435778323009113
+C,Brainco retargeting + fine-tuning,Held-out initial pose,3,0,,,,,no grasp,0,0,0,89.9999664152944,0.02908163230870367,4.690022857514335
+C,Brainco retargeting + fine-tuning,Held-out initial pose,4,0,,,,,no grasp,0,0,0,89.99997961146344,0.03363754325850291,4.330930956719693
+C,Brainco retargeting + fine-tuning,Held-out initial pose,5,0,,,,,no grasp,0,1,0,89.99996366904024,0.04100467457506182,3.274165037345225
+C,Brainco retargeting + fine-tuning,Held-out initial pose,6,0,,,,,no grasp,0,0,0,89.9999784571446,0.07932303453786195,4.687720408661253
+C,Brainco retargeting + fine-tuning,Held-out initial pose,7,1,145,482,708,35.4,success,0,5,0,89.99997931396831,0.14110559380232462,4.250889032090088
+C,Brainco retargeting + fine-tuning,Held-out initial pose,8,0,,,,,no grasp,0,0,0,89.9999664152944,0.03784605840206116,4.474524281937934
+C,Brainco retargeting + fine-tuning,Held-out initial pose,9,0,,,,,no grasp,0,1,0,89.99995925749488,0.042302279775078666,4.450086123300795
