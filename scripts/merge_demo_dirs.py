@@ -3,7 +3,7 @@
 Episodes are renumbered 0..N-1 across the inputs. Each merged per_episode record keeps its
 source folder and source episode id, so every demo stays traceable to the run that made it.
 
-usage: python scripts/merge_demo_dirs.py --out results/demos_A_all results/demos_A/v1 results/demos_A/v2 ...
+usage: python scripts/merge_demo_dirs.py --drop-black --out data/demos_merged data/demos_dex3/*/
 """
 import argparse
 import json
