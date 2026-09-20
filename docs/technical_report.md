@@ -178,6 +178,14 @@ per-trial records in [../results/trials.csv](../results/trials.csv):
 
 Held-out configurations: A 2 of 20, B 0 of 20, C 2 of 20.
 
+Tracking error (M2) is reported two ways, in
+[../results/tracking_error.md](../results/tracking_error.md) and in the metric table. In
+Cartesian terms, the distance between the commanded pose and the pose reached one control step
+later averages 3.6 to 5.4 mm at the wrists across all stages and 0.4 to 1.8 mm at the Brainco
+fingertips, with maxima of a few centimetres during contact transients. In joint terms the same
+quantity is 0.008 to 0.010 rad for the arms. The arm figure is the same in Stage A and Stage B,
+which is the point: swapping the hands does not disturb how the arms follow their targets.
+
 ![success per configuration](../results/plots/success_by_configuration.png)
 
 Fine-tuning recovers the capability the hand swap destroys, and lands at about the level of the
@@ -238,7 +246,27 @@ new hand, which the correspondence alone could not provide.
 
 ![training loss](../results/plots/training_loss.png)
 
-## 10. Limitations and deviations
+## 10. Tools from the reference list
+
+Of the tools the assignment lists, this work uses NVIDIA Isaac GR00T as the policy stack, Isaac Lab
+on Isaac Sim as the simulator, the Unitree G1_29DoF model, and the Unitree Dex3 hands as the source
+embodiment. Two are deliberately not used:
+
+- **SONIC** is a whole-body control and motion-tracking stack. The assignment allows a fixed base
+  for this transfer so that the hand and upper-body change can be judged on its own, and with the
+  pelvis pinned there is no balance problem for SONIC to solve. It is the right tool for the
+  standing version of the task, which is why the bonus pipeline in
+  [assignment2_pipeline.md](assignment2_pipeline.md) puts it in charge of the legs and waist.
+- **GMR**, general motion retargeting, maps motion between differently proportioned bodies, usually
+  from a human to a humanoid. Here the two robots are the same G1 above the wrists, with identical
+  arm joints, limits and frames; only the hands differ. The mapping that matters is therefore
+  finger-to-finger, which is what the correspondence in section 4 defines.
+
+Outside the list, this work uses the LeRobot v2 dataset layout, which is what the GR00T data loader
+reads, and the official `unitree_ros` description for the Brainco hands. Both are listed with
+versions and licenses in [provenance.md](provenance.md).
+
+## 11. Limitations and deviations
 
 - Demonstrations are scripted with differential IK, not teleoperated. Object variation, placement
   noise and held-out cases test against hard-coding, but the distribution is narrow and both
@@ -249,10 +277,11 @@ new hand, which the correspondence alone could not provide.
 - Stage C used 44 demonstrations against Stage A's 98, and its episode cap is 1050 steps against
   750. Both differences follow from the longer Brainco demonstrations and are stated with the
   results.
-- The assignment asks for fingertip and wrist tracking error. The policies command joint targets
-  and have no reference trajectory at evaluation time, so the reported tracking error is the
-  difference between the commanded joint target and the joint position reached one step later,
-  for the arm and for the hand separately.
+- The policies command joint targets and have no reference trajectory at evaluation time, so
+  fingertip and wrist tracking error is measured as commanded against achieved: both the commanded
+  joint targets and the joint positions reached are run through forward kinematics and compared.
+  Stage A fingertips are the exception, because the Dex3 hand geometry exists only inside the Isaac
+  Sim USD asset, so that column reports the joint-space error instead.
 - Unintended contacts are approximated by counting sudden jumps in object velocity, which catch
   impacts from the hand, the other hand or the table. Contact forces are not measured, so the
   "excessive contact force" part of the metric is not reported.
@@ -270,7 +299,7 @@ new hand, which the correspondence alone could not provide.
 - The reported control rate of 4 to 5 Hz is wall-clock: every action chunk crosses an SSH tunnel
   to the GPU that serves the policy. Simulated time is unaffected, because the simulator waits.
 
-## 11. Reproducing
+## 12. Reproducing
 
 Environment files, commands and the layout of every script are in the
 [repository README](../README.md). The evaluation outputs in `results/` are the ones behind

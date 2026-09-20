@@ -1,0 +1,107 @@
+{
+  "A/stick_30x240": {
+    "wrist_mean_m": 0.004945215046985885,
+    "wrist_max_m": 0.03760585289920104,
+    "fingertip_mean_m": null,
+    "fingertip_max_m": null,
+    "trials": 10
+  },
+  "A/stick_30x220": {
+    "wrist_mean_m": 0.0046505261029547796,
+    "wrist_max_m": 0.026429758430734147,
+    "fingertip_mean_m": null,
+    "fingertip_max_m": null,
+    "trials": 10
+  },
+  "A/stick_35x240": {
+    "wrist_mean_m": 0.004991028773641236,
+    "wrist_max_m": 0.0402097658698797,
+    "fingertip_mean_m": null,
+    "fingertip_max_m": null,
+    "trials": 10
+  },
+  "A/heldout_object_round": {
+    "wrist_mean_m": 0.005325470692263865,
+    "wrist_max_m": 0.06437616315121084,
+    "fingertip_mean_m": null,
+    "fingertip_max_m": null,
+    "trials": 10
+  },
+  "A/heldout_initial_pose": {
+    "wrist_mean_m": 0.0049848064146629815,
+    "wrist_max_m": 0.07948030153631931,
+    "fingertip_mean_m": null,
+    "fingertip_max_m": null,
+    "trials": 10
+  },
+  "B/stick_30x240": {
+    "wrist_mean_m": 0.005392908264201046,
+    "wrist_max_m": 0.1520855510954085,
+    "fingertip_mean_m": 0.0006475989971880894,
+    "fingertip_max_m": 0.028365192935088022,
+    "trials": 10
+  },
+  "B/stick_30x220": {
+    "wrist_mean_m": 0.0042252557830972735,
+    "wrist_max_m": 0.07287379330977012,
+    "fingertip_mean_m": 0.0005458560280548184,
+    "fingertip_max_m": 0.046167603320234785,
+    "trials": 10
+  },
+  "B/stick_35x240": {
+    "wrist_mean_m": 0.004488705717993221,
+    "wrist_max_m": 0.10881297539073335,
+    "fingertip_mean_m": 0.0003836330417003893,
+    "fingertip_max_m": 0.030249810889478423,
+    "trials": 10
+  },
+  "B/heldout_object_round": {
+    "wrist_mean_m": 0.004515582491267616,
+    "wrist_max_m": 0.10215508118656011,
+    "fingertip_mean_m": 0.0004925654097790984,
+    "fingertip_max_m": 0.030595465808321096,
+    "trials": 10
+  },
+  "B/heldout_initial_pose": {
+    "wrist_mean_m": 0.004377860707907822,
+    "wrist_max_m": 0.03761578462020671,
+    "fingertip_mean_m": 0.0004175728985546815,
+    "fingertip_max_m": 0.028574841777485493,
+    "trials": 10
+  },
+  "C/stick_30x240": {
+    "wrist_mean_m": 0.003900635956355757,
+    "wrist_max_m": 0.048674214150822404,
+    "fingertip_mean_m": 0.001185606811589928,
+    "fingertip_max_m": 0.03676357602375773,
+    "trials": 10
+  },
+  "C/stick_30x220": {
+    "wrist_mean_m": 0.004067189433243324,
+    "wrist_max_m": 0.03132778505471556,
+    "fingertip_mean_m": 0.0018149392178183025,
+    "fingertip_max_m": 0.03956128485567406,
+    "trials": 10
+  },
+  "C/stick_35x240": {
+    "wrist_mean_m": 0.003628101577965395,
+    "wrist_max_m": 0.04361247781563373,
+    "fingertip_mean_m": 0.0015414698787947778,
+    "fingertip_max_m": 0.04073443369795841,
+    "trials": 10
+  },
+  "C/heldout_object_round": {
+    "wrist_mean_m": 0.0041610464877654225,
+    "wrist_max_m": 0.043886744572524665,
+    "fingertip_mean_m": 0.0011393538102809834,
+    "fingertip_max_m": 0.051368622375617935,
+    "trials": 10
+  },
+  "C/heldout_initial_pose": {
+    "wrist_mean_m": 0.0038506921435891303,
+    "wrist_max_m": 0.03657092720037721,
+    "fingertip_mean_m": 0.0008269289647552733,
+    "fingertip_max_m": 0.046927024884106376,
+    "trials": 10
+  }
+}

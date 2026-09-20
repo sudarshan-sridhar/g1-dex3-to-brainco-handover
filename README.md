@@ -25,9 +25,12 @@
 
 ## What this is
 
-The robot is a Unitree G1_29DoF with a fixed base. The task is the handover from the
-assignment: the right hand grasps an upright stick, passes it to the left hand without
-teleportation, releases, and the left hand places it on a target.
+Assignment 1 of a robotics take-home: Dex-to-Brainco hand retargeting and simulation fine-tuning
+on a Unitree G1_29DoF with a fixed base. The task is the handover the assignment gives as an
+example: the right hand grasps an upright stick, passes it to the left hand without teleportation,
+releases, and the left hand places it on a target. Assignment 2, the advanced one, asks for a
+technical pipeline rather than code, and is answered in
+[docs/assignment2_pipeline.md](docs/assignment2_pipeline.md).
 
 The starting policy is `nvidia/GR00T-N1.7-3B`. Its vision-language backbone stays frozen
 throughout; a new embodiment slot, the projector and the flow-matching action head carry all
@@ -71,6 +74,7 @@ thumb across first, so it closes in the same plane the fingers curl in.
 
 - Full metric table (M1 to M6): [results/results_table.md](results/results_table.md)
 - One row per trial: [results/trials.csv](results/trials.csv)
+- Wrist and fingertip tracking error: [results/tracking_error.md](results/tracking_error.md)
 - Plots: [success per configuration](results/plots/success_by_configuration.png),
   [how far trials get](results/plots/task_progress_by_stage.png),
   [training loss](results/plots/training_loss.png)
